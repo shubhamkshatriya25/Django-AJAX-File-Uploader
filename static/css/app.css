@@ -1,0 +1,26 @@
+#myProgress {
+    width: 100%;
+}
+#uploaded_files {
+    margin-top: 25px;
+    display: flex;
+}
+label {
+    font-weight: bold;
+}
+.file-icon i {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+.file-details {
+    margin-top: -2px;
+    padding-left: 10px;
+    width: 100%;
+}
+.file-details p {
+    margin-bottom: -7px;
+}
+small {
+    margin-top: 0;
+    color: black;
+}

@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <title>AJAX + DJANGO File Uploader</title>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    <div class="col-lg-6 col-md-6" style="margin: 100px auto; display: block;">
+        <form enctype="multipart/form-data" method="POST" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Select file to upload.</label>
+                <input type="file" class="form-control" id="fileupload" placeholder="Select file">
+            </div>
+            <input type="submit" value="Upload" id="submit" class="btn btn-success">     
+        </form>
+        <div id="uploaded_files"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
