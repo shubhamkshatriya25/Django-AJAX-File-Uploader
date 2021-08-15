@@ -1,4 +1,17 @@
 # AJAX-File-Uploader
+[Here](https://dev.to/shubhamkshatriya25/ajax-file-upload-in-chunks-using-django-with-a-progress-bar-4nhi) is the link of the blog for this project, incase you want a code walk through.
 
-The master contains the aggregated code for DRAG & DROP File Upload.
-The browse-file-and-upload branch contains the code for browsing the file and then upload.
+### Install django in your local machine if not installed.
+```
+pip install django
+```
+
+### Run the project.
+```
+python manage.py runserver
+```
+
+### Below is the glimpse of the web app.
+![image 1](/images/image1.png)
+![image 2](/images/image2.png)
+![image 3](/images/image3.png)
